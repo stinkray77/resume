@@ -1,0 +1,13 @@
+# Ignore LaTeX clutter
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Ignore ALL PDFs in the root directory
+*.pdf
+
+# DO NOT ignore the builds folder (we want to track final resumes)
+!builds/*.pdf
