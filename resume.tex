@@ -1,130 +1,122 @@
 \documentclass[letterpaper,11pt]{article}
 
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
 
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\input{helpers}
 \begin{document}
+\begin{justify}
 
-%----------HEADING----------
-\begin{center}
-    \textbf{\Huge \scshape First Last} \\ \vspace{1pt}
-    \small +65 XXXX XXXX $|$ \href{mailto:email@u.nus.edu}{\underline{email@u.nus.edu}} $|$
-    \href{https://linkedin.com/in/yourprofile}{\underline{linkedin.com/in/yourprofile}} $|$
-    \href{https://github.com/yourgithub}{\underline{github.com/yourgithub}}
-\end{center}
 
-%-----------EDUCATION-----------
-\section{Education}
-\resumeSubHeadingListStart
-\resumeSubheading
-{National University of Singapore}{Aug. 2024 -- May 2028}
-{Bachelor of Computing in Computer Science, Minor in Mathematics}{Singapore}
-\resumeSubHeadingListEnd
+  % HEADING SECTION STARTS HERE
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\large{Ray Chua}} $|$ {\href{mailto:raychua0106@gmail.com}{raychua0106@gmail.com}} $|$ {\href{}{\underline{stinkray77.github.io}}} & \textbf{Availability: }Mar 2026 onwards \\
+    \href{https://linkedin.com/in/raychua0106/}{\underline{linkedin.com/in/raychua0106}} $|$ {\href{https://github.com/stinkray77}{\underline{github.com/stinkray77}}} $|$ {+65 9274 4840}
+  \end{tabular*}
+  % END OF SECTION %
 
-%-----------EXPERIENCE-----------
-\section{Experience}
-\resumeSubHeadingListStart
 
-\resumeSubheading
-{Company Name}{Month Year -- Present}
-{Software Engineering Intern}{Singapore}
-\resumeItemListStart
-\resumeItem{Engineered critical features using [Technology] to achieve [Quantifiable Metric].}
-\resumeItem{Led the development of a [System Type] pipeline, reducing latency by X\%.}
-\resumeItemListEnd
+  % EDUCATION SECTION STARTS HERE
+  \section{Education}
+  \resumeSubHeadingListStart
 
-\resumeSubHeadingListEnd
+  \resumeSubheading{\textbf{National University of Singapore}}{Expected Grad: Dec. 2026}
+  \resumeDescription{B.Com Computer Science}
 
-%-----------PROJECTS-----------
-\section{Projects}
-\resumeSubHeadingListStart
-\resumeProjectHeading
-{\textbf{High-Performance Limit Order Book} $|$ \emph{C++}}{Month Year -- Present}
-\resumeItemListStart
-\resumeItem{Engineered a low-latency matching engine using standard library containers and optimized memory allocation.}
-\resumeItem{Implemented order parsing and execution logic to handle high-throughput sequential trade data.}
-\resumeItemListEnd
+  % \resumeSubheading{\textbf{Hwa Chong Institution}}{2015 - 2021}
+  % \resumeDescription{GCE A-Levels (PCME with H3 Physics) $|$ 90 RP with H3 Distinction}
 
-\resumeProjectHeading
-{\textbf{Automated Job Scraper} $|$ \emph{Python, Telegram API}}{Month Year -- Month Year}
-\resumeItemListStart
-\resumeItem{Built a data pipeline to aggregate target listings, implementing a notification system for real-time alerts.}
-\resumeItemListEnd
-\resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
+  % END OF SECTION %
 
-%-----------TECHNICAL SKILLS-----------
-\section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-          \textbf{Languages}{: C++, Python, Java, JavaScript, SQL} \\
-          \textbf{Tools \& Frameworks}{: Git, Docker, AWS, React, Node.js} \\
+
+  % EXPERIENCE SECTION STARTS HERE
+  \section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading{\textbf{Software Engineering Intern @ \textit{Binance}}}{May 2025 - Present}
+  \resumeDescription{Binance empowers users to trade, invest, and manage cryptocurrencies seamlessly and securely on a global scale}
+  \resumeItemListStart
+  \resumeItem{}
+  \resumeItem{}
+  \resumeItem{}
+  \resumeItemListEnd
+
+  \resumeSubheading{\textbf{Founding SWE @ \textit{Check (Iterative W25)}} $|$ Reinventing AI-Assisted Learning}{Feb. 2025 - May 2025}
+  \resumeItemListStart
+  \resumeItem{}
+  \resumeItem{}
+  \resumeItemListEnd
+
+  \resumeSubheading{\textbf{Software Engineering Intern @ \textit{London Stock Exchange Group (LSEG)}}}{Jun. 2024 -- Dec. 2024}
+  \resumeDescription{LSEG Labs addresses challenges in financial markets by assessing climate risks and simplifying ESG disclosure}
+  \resumeItemListStart
+  \resumeItem{}
+  \resumeItem{}
+  \resumeItem{}
+  \resumeItem{}
+  \resumeItem{}
+  \resumeItemListEnd
+
+  \resumeSubheading{\textbf{Software Engineering Intern @ \textit{NodeFlair - SEA Tech Career Platform}}}{Jan. 2024 -- Jun. 2024}
+  \resumeDescription{NodeFlair connects tech talents with job opportunities, optimizing the recruitment process for millions in SEA}
+  \resumeItemListStart
+  \resumeItem{}
+  \resumeItem{}
+  \resumeItem{}
+  \resumeItem{}
+  \resumeItemListEnd
+
+  \resumeSubheading{\textbf{Software Engineering / ML Intern @ \textit{Home Team S\&T Agency (HTX)}}}{Nov. 2023 -- Jan. 2024}
+  \resumeDescription{xData builds data and AI products that enhances the Home Team's capabilities in internal and mission-based operations}
+  \resumeItemListStart
+  \resumeItem{}
+  \resumeItem{}
+  \resumeItem{}
+  \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  % END OF SECTION %
+
+
+  % PROJECTS SECTION STARTS HERE
+  \section{Projects / Extracurriculars}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading{\textbf{Insecure File Service} $|$ Simple file sharing service for public use - \href{http://ifs.kenf.dev/}{\underline{ifs.kenf.dev}}}{Sep. 2024 - Present}
+  \resumeItemListStart
+  \resumeItem{}
+  \resumeItem{}
+  \resumeItemListEnd
+
+  \resumeSubheading{\textbf{Linux Homelab} $|$ Repurposed laptop running Ubuntu Server for personal use}{Feb. 2024 - Present}
+  \resumeItemListStart
+  \resumeItem{}
+  \resumeItem{}
+  \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  % END OF SECTION %
+
+
+  % AWARDS SECTION STARTS HERE
+  % \section{Awards}
+  %   \resumeSubHeadingListStart
+  %     \resumeProjectHeading{\textbf{NUS Hack\&Roll `25} - \emph{Top 8} $|$ \textbf{NUS-ISE Micron BACC `24} - \emph{2nd Runner-up} $|$ \textbf{Ground Zero `24} - \emph{Top 10}}{}
+  %     \resumeProjectHeading{\textbf{SCS Splash Awards `23} - \emph{1st} $|$ \textbf{SUTD WhatTheHack `23} - \emph{1st} $|$ \textbf{HTX HacX! `23} - \emph{3rd} $|$ \textbf{CloudHacks `23} - \emph{1st}}{}
+  %   \resumeSubHeadingListEnd
+  % END OF SECTION %
+
+
+  % TECHNICAL SKILLS SECTION STARTS HERE
+  \section{Technical Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]\small{\item{
+          \textbf{Languages: }{} \\
+          \textbf{Frameworks: }{} \\
+          \textbf{Developer Tools: }{} \\
           }}
-\end{itemize}
+  \end{itemize}
+  % END OF SECTION %
 
+
+  % END OF DOCUMENT
+\end{justify}
 \end{document}
