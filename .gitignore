@@ -9,5 +9,4 @@
 # Ignore ALL PDFs in the root directory
 *.pdf
 
-# DO NOT ignore the builds folder (we want to track final resumes)
-!builds/*.pdf
+builds/
