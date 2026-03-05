@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e # Forces the script to crash if a git checkout fails
 
 # 1. Create a directory for the final outputs
 mkdir -p builds
