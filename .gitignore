@@ -10,8 +10,8 @@
 *.synctex.gz
 *.toc
 
+# Compiled PDF (intermediate artefact – final copies live in builds/)
+resume.pdf
+
 # OS generated files
 .DS_Store
-
-
-builds/
